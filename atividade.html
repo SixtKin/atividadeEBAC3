@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="atividade.css">
+    <title>Formulário</title>
+</head>
+    <h1>Comparador de números</h1>
+</header>
+<body>
+    <form id="comparador">
+        <input id="numeroA" type="number" placeholder="Insira um número" required>
+        <input id="numeroB" type="number" placeholder="Insira um número" required>
+        <button type="submit">Enviar</button>
+    </form>
+    <p class="error-message hidden" id="alert">
+        O número A não é maior.
+    </p>
+    <p class="success-message hidden">
+        O número B é maior.
+    </p>
+    <script src="atividade.js"></script>
+</body>
+</html>
