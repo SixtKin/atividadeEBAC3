@@ -5,7 +5,7 @@ function compararCampo () {
     const numeroB = document.getElementById('numeroB').value
     const alert = document.getElementById('alert')
 
-    if (numeroA >= numeroB){
+    if (parseFloat(numeroA) >= parseFloat(numeroB)){
         document.querySelector('.error-message').classList.remove('hidden')
         document.querySelector('.success-message').classList.add('hidden')
     } else {
@@ -18,4 +18,3 @@ form.addEventListener('submit', function(e) {
     e.preventDefault()
     compararCampo()
 })
-
